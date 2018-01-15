@@ -1,0 +1,17 @@
+source /Users/jcandlin/common.sh
+
+# User specific aliases and functions
+
+sv ()
+{
+        osascript -e "tell application \"Terminal\" to do script \"vim ${PWD}/${1};exit\""
+}
+
+
+alias cfeed='cd ~/gitrp/gtp;ls'
+alias vmf='ssh jcandlin@127.0.0.1 -p 2222'
+alias gitrp='cd ~/gitrp'
+#alias svn='cd ~/svn'
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
